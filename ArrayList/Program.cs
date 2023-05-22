@@ -14,15 +14,17 @@ namespace ArrayList01
             //khai báo array list
             ArrayList arl = new ArrayList();
 
-            arl.Add("nguyen van a");
-            arl.Add(10);
-            arl.Add(true);
+            arl.Add(3);
+            arl.Add(1);
+            arl.Add(2);
 
-            Console.WriteLine("vi tri cua true: " + arl.IndexOf(true));
+            //arl.Sort();
+            arl.Reverse();
 
-            //Console.WriteLine(arl[0]);
-            //Console.WriteLine(arl[1]);
-            //Console.WriteLine(arl[2]);
+            foreach(int i in arl)
+            {
+                Console.WriteLine(i);   
+            }
 
             Console.ReadLine();
 

@@ -23,6 +23,7 @@ namespace DemoArrayList
                 string str = Console.ReadLine();
                 if (str == "q") break;
 
+                // thêm giá trị nhập vào ArrayList
                 arl.Add(int.Parse(str));
             }
 
@@ -41,6 +42,7 @@ namespace DemoArrayList
                 int x = Convert.ToInt32(arl[i].ToString());
                 if (x % 2 == 0)
                 {
+                    // loại bỏ phần tử ở vị trí i
                     arl.RemoveAt(i);
                     i--;
                 }
